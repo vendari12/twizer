@@ -54,7 +54,8 @@ def _score(val):
 def _read_data(filename):
     file = filename.read().decode('utf-8')
     io_string = io.StringIO(file)
-    reader = csv.reader(io_string,delimiter=';')
+    #delimiter semicolon used, change to ',' to suit your needs if error
+    reader = csv.reader(io_string,delimiter=';' )
     for row in reader:
         dic = {}
         dic['name'] = row.pop(0)
