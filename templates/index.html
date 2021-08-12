@@ -40,11 +40,12 @@
 
 
 <div class="col-md-4 col-sm-6 col-lg-8" style="margin-bottom: 2cm; margin-top: 2cm;">
+	<p> NOTE VALID FILE TYPE IS CSV, FOR DECATHLON DATA</p>
   <form method="post" enctype="multipart/form-data">
     {% csrf_token %}
 	  {{ form|crispy}}
 
-    <button type="submit" class="btn btn-primary">Upload</button>
+    <button type="submit" class="btn btn-primary">Download file</button>
 </form>
 
 </div>
